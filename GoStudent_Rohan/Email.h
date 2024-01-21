@@ -1,29 +1,32 @@
 #pragma once
 
 #include <iostream>
-#include "Kunde.h"
 
 class Email
 {
 private:
-	Kunde kunde;
 	std::string passwort;
+	std::string vorname;
+	std::string nachname;
 	std::string const domain = "@filmverleih.de";
-
 	std::string emailAdresse;
 
 
+
 public:
-	Email(Kunde _kunde, std::string _passwort) :
-		kunde(_kunde), passwort(_passwort) {
+	Email(std::string _vorname, std::string _nachname) :
+		vorname(_vorname), nachname(_nachname) {
 
 		emailAdresse = erstelleEmail();
 
 	}
 
+	void setPasswort(std::string password) {
+		passwort = password;
+	}
 
 	std::string erstelleEmail() {
-		return kunde.getVorname() + "." + kunde.getNachname() + domain;
+		return vorname + "." + nachname + domain;
 	}
 
 	std::string getEmailAdresse() {
