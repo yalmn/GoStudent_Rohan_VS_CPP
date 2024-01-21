@@ -3,25 +3,24 @@
 #include <iostream>
 #include "Email.h"
 
-using namespace std;
 
 class Kunde
 {
 private:
-	string vorname;
-	string nachname;
-	Email email;
+	std::string vorname;
+	std::string nachname;
 
 public:
-	string getVorname() {
-		return this->vorname;
+	Kunde(std::string _vorname, std::string _nachname) :
+		vorname(_vorname), nachname(_nachname) {
 	}
 
-	string getNachname(){
-
+	std::string getVorname() {
+		return vorname;
 	}
 
-
-
+	std::string getNachname(){
+		return nachname;
+	}
 };
 
