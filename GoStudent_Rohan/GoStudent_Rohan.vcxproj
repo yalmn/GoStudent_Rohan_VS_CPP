@@ -21,9 +21,13 @@
   <ItemGroup>
     <ClInclude Include="Film.h" />
     <ClInclude Include="Filmdatenbank.h" />
+    <ClInclude Include="Login.h" />
     <ClInclude Include="Regie.h" />
     <ClInclude Include="Email.h" />
     <ClInclude Include="Kunde.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Login.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

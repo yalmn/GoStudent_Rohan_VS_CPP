@@ -22,7 +22,11 @@ public:
 	}
 
 	void setPasswort(std::string password) {
-		passwort = password;
+		this->passwort = password;
+	}
+
+	std::string getPasswort() {
+		return passwort;
 	}
 
 	std::string erstelleEmail() {
